@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class FreshWorksTest {
+public class AzureTest {
 	WebDriver driver;
 
 	@BeforeMethod
@@ -37,16 +37,16 @@ public class FreshWorksTest {
 
 		}
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get("https://www.freshworks.com/");
+		driver.get("https://www.google.com/");
 
 	}
 
 
 	@Test(priority = 1)
-	public void freshWorksTitleTest() {
+	public void googleTitleTest() {
 		System.out.println("running title test...");
 		System.out.println(driver.getTitle());
-		assertEquals(driver.getTitle(), "A fresh approach to customer engagement");
+		assertEquals(driver.getTitle(), "Google");
 	}
 
 
